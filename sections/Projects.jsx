@@ -5,7 +5,7 @@ import { Button } from '../components/Button'
 
 const Projects = () => {
     return (
-        <section className='projects-section'>
+        <section id='projects-section'>
             <div className='container py-32'>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='flex flex-col items-center mb-20'>

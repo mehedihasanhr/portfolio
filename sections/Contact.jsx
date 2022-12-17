@@ -6,7 +6,7 @@ import { Input, Textarea } from '../components/Form'
 
 const Contact = () => {
     return (
-        <section className='projects-section'>
+        <section className='contact-section' id='contact-section'>
             <div className='container py-32'>
                 <div className='flex flex-col items-center justify-center mb-16'>
                     <div className='flex flex-col items-center mb-20'>

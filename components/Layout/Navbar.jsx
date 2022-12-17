@@ -32,8 +32,12 @@ export const Navbar = () => {
                 <div className="flex items-center justify-between w-full">
                     {/* Logo... */}
                     <div className="relative">
-                        <div className="relative text-green-400">
-                            <h3>HRIDOY</h3>
+                        <div className="relative text-green-400 z-10">
+                            <Link href="/#home">
+                                <h3>
+                                    HRIDOY
+                                </h3>
+                            </Link>
                         </div>
                         <div className='absolute top-0 left-0 w-full bg-[rgba(0,255,0,0.3)] blur-[40px] h-full' />
                     </div>
@@ -41,19 +45,19 @@ export const Navbar = () => {
 
                     {/* Nav links... */}
                     <nav className="flex items-center ml-10 space-x-6">
-                        <Link href="/" className="text-white/80 hover:text-green-500">
+                        <Link href="/#home" className="text-white/80 hover:text-green-500">
                             Home
                         </Link>
 
-                        <Link href="/" className="text-white/80 hover:text-green-500">
-                            Portfolios
-                        </Link>
-
-                        <Link href="/" className="text-white/80 hover:text-green-500">
+                        <Link href="/#about-section" className="text-white/80 hover:text-green-500">
                             About us
                         </Link>
 
-                        <Link href="/" className="text-white/80 hover:text-green-500">
+                        <Link href="/#projects-section" className="text-white/80 hover:text-green-500">
+                            Portfolios
+                        </Link>
+
+                        <Link href="/#contact-section" className="text-white/80 hover:text-green-500">
                             Contact us
                         </Link>
 

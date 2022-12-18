@@ -7,7 +7,7 @@ import { Project } from '../components/Project'
 const Projects = () => {
     return (
         <section id='projects-section'>
-            <div className='container sm:py-32'>
+            <div className='container sm:py-20 md:py-24 lg:py-32'>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='flex flex-col items-center mb-20'>
                         <div className='block w-fit relative mb-2.5' >
@@ -19,7 +19,7 @@ const Projects = () => {
                         </p>
                     </div>
                 </div>
-                <div className='grid grid-cols-4 sm:grid-cols-12 gap-10 mb-20'>
+                <div className='grid grid-cols-4 sm:grid-cols-8 md:grid-cols-12 gap-10 sm:gap-8 md:gap-6 lg:gap-10 mb-20'>
                     {
                         [1, 2, 3, 4, 5, 6].map((_, index) => (
                             <Project

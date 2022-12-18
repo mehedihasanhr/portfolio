@@ -19,8 +19,8 @@ const Contact = () => {
                         </p>
                     </div>
 
-                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8'>
-                        <div className='p-8 border border-dashed border-gray-700 col-span-1'>
+                    <div className='grid grid-cols-12 gap-6 sm:gap-8'>
+                        <div className='p-8 border border-dashed border-gray-700 col-span-12 md:col-span-6 xl:col-span-4'>
                             <div className='flex gap-4'>
                                 <div className='relative w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center'>
                                     <div className='absolute bg-green-500 blur-[70px] w-10 h-10' />
@@ -44,7 +44,7 @@ const Contact = () => {
                         </div>
 
 
-                        <div className='p-8 border border-dashed border-gray-700 col-span-1'>
+                        <div className='p-8 border border-dashed border-gray-700 col-span-12 md:col-span-6 xl:col-span-4'>
                             <div className='flex gap-4'>
                                 <div>
                                     <div className='relative w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center'>
@@ -72,7 +72,7 @@ const Contact = () => {
                         </div>
 
 
-                        <div className='p-8 border border-dashed border-gray-700 col-span-1 '>
+                        <div className='p-8 border border-dashed border-gray-700 sm:col-span-12 col-span-12 xl:col-span-4'>
                             <div className='flex gap-4'>
 
                                 <div>
@@ -97,9 +97,9 @@ const Contact = () => {
 
                 {/* contact form */}
                 <div>
-                    <div className='grid grid-cols-1 sm:grid-cols-12 gap-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-12 gap-10'>
                         {/* contact form */}
-                        <div className="col-span-8">
+                        <div className="col-span-1 md:col-span-8 lg:col-span-7 xl:col-span-8 lg:col-start-2 xl:col-start-1 ml-0 lg:ml-6 xl:ml-0">
                             <div className='flex flex-col items-center'>
                                 <div className='w-full max-w-[600px]'>
                                     <div className='block w-fit relative mb-10' >

@@ -28,8 +28,8 @@ export const Navbar = () => {
 
 
     return (
-        <header className="">
-            <div className="container flex items-center h-16 sm:h-28">
+        <header className="h-16 sm:h-24 md:h-28 relative">
+            <div className="container flex items-center h-16 sm:h-24 md:h-28">
                 <div className="flex items-center justify-between w-full">
                     {/* Logo... */}
                     <div className="relative">

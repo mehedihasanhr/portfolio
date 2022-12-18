@@ -20,19 +20,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <main className={inter.className} id="home">
-                {/* navbar */}
                 <Navbar />
-                {/* hero section */}
                 <Hero />
-                {/* about section */}
                 <About />
-                {/* projects section */}
                 <Projects />
-
-                {/* contact section */}
                 <Contact />
-
-                {/* footer */}
                 <Footer />
             </main>
         </>

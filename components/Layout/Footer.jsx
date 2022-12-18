@@ -6,7 +6,7 @@ export const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="flex items-center">
-                        <div className="flex flex-col items-center justify-center sm:items-start">
+                        <div className="flex flex-col items-center justify-center md:items-start">
                             <span className="text-sm">© 2022</span>
                             <span className="text-sm">All rights reserved</span>
                         </div>

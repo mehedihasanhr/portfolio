@@ -14,12 +14,12 @@ const Contact = () => {
                             <span className='absolute top-0 left-0 w-full h-full bg-white blur-[100px]' />
                             <h3 className="font-bold">Contact <span className='text-green-500'>Me</span></h3>
                         </div>
-                        <p className='text-gray-500'>
+                        <p className='text-gray-500 text-xs sm:text-base'>
                             --- a few recent design & coding projects ---
                         </p>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
+                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8'>
                         <div className='p-8 border border-dashed border-gray-700 col-span-1'>
                             <div className='flex gap-4'>
                                 <div className='relative w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center'>
@@ -30,8 +30,15 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <h3 className='font-bold text-lg text-green-500'>Phone</h3>
-                                    <a target="_blank" rel="noopenner noreferrer" href='tel:+8801518309205' className='text-gray-500 hover:text-gray-400'>(+880) 1518 309 205</a>
+                                    <h3 className='font-bold text-base sm:text-lg text-green-500'>Phone</h3>
+                                    <a
+                                        target="_blank"
+                                        rel="noopenner noreferrer"
+                                        href='tel:+8801518309205'
+                                        className='text-gray-500 hover:text-gray-400 text-sm sm:text-base'
+                                    >
+                                        (+880) 1518 309 205
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -51,8 +58,15 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <h3 className='font-bold text-lg text-yellow-500'>Email</h3>
-                                    <a target="_blank" rel="noopenner noreferrer" href='mailto:mehedihasan.hr.324@gmail.com' className='text-gray-500 hover:text-gray-400'>mehedihasan.hr.324@gmail.com</a>
+                                    <h3 className='font-bold text-base sm:text-lg text-yellow-500'>Email</h3>
+                                    <a
+                                        target="_blank"
+                                        rel="noopenner noreferrer"
+                                        href='mailto:mehedihasan.hr.324@gmail.com'
+                                        className='text-gray-500 hover:text-gray-400 text-sm sm:text-base'
+                                    >
+                                        mehedihasan.hr.324@gmail.com
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -73,17 +87,17 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <h3 className='font-bold text-lg text-pink-500'>Location</h3>
-                                    <p className='text-gray-500'>Khailkur, Board Bazar, National University, Gazipur-1704</p>
+                                    <h3 className='font-bold text-base sm:text-lg text-pink-500'>Location</h3>
+                                    <p className='text-gray-500 text-sm sm:text-base'>Khailkur, Board Bazar, National University, Gazipur-1704</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
+                {/* contact form */}
                 <div>
-                    <div className='grid grid-cols-12 gap-10'>
+                    <div className='grid grid-cols-1 sm:grid-cols-12 gap-10'>
                         {/* contact form */}
                         <div className="col-span-8">
                             <div className='flex flex-col items-center'>

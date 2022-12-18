@@ -13,8 +13,8 @@ const About = (props, ref) => {
             <div className="container text-left">
                 <div className="py-32">
                     <div className='grid grid-cols-12 gap-10'>
-                        <div className="col-span-4">
-                            <div className='relative w-[379px] h-[379px] px-5 flex items-center justify-center' >
+                        <div className="md:col-span-12 lg:col-span-5 xl:col-span-4">
+                            <div className='relative w-80 h-80 sm:w-[379px] sm:h-[379px] px-5 flex items-center justify-center' >
                                 <div className='absolute top-0 left-0 w-full h-full '>
                                     <svg width="100%" height="100%" viewBox="0 0 369 369" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" clipRule="evenodd" d="M364 0H353V5H364V16H369L369 5V0H364Z" fill="#333" />
@@ -29,52 +29,52 @@ const About = (props, ref) => {
                                         <rect x="2.5" y="2.5" width="364" height="364" stroke="#333" />
                                     </svg>
                                 </div>
-                                <div className='relative w-[345px] h-[369px] opacity-90'>
+                                <div className='relative w-80 h-80 md:w-[345px]  md:h-[369px] opacity-90'>
                                     <div className='w-20 h-20 absolute top-0 left-10 bg-white blur-[100px]' />
                                     <Image src="/edited.png" alt="" fill />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-6">
+                        <div className="col-span-12 lg:col-span-7 xl:col-span-8">
                             <div className='block w-fit relative mb-10' >
                                 <span className='absolute top-0 left-0 w-full h-full bg-white blur-[100px]' />
                                 <h3 className="font-bold">About <span className='text-green-500'>Me</span></h3>
                             </div>
-                            <p className='leading-[22px] mb-8'>Hi, {"I'm"} a Professional Web Designer with best experience over 4 years in <span className='text-green-500 font-medium'>React JS</span>, <span className='text-green-500 font-medium'>Next JS</span>,  <span className='text-green-500 font-medium'> Redux </span>,  <span className='text-green-500 font-medium'>HTML5</span>,  <span className='text-green-500 font-medium'>CSS3</span>. I build best quality, user friendly and responsive custom websites.</p>
+                            <p className='text-sm sm:text-base leading-[22px] mb-8 max-w-[600px]'>Hi, {"I'm"} a Professional Web Designer with best experience over 4 years in <span className='text-green-500 font-medium'>React JS</span>, <span className='text-green-500 font-medium'>Next JS</span>,  <span className='text-green-500 font-medium'> Redux </span>,  <span className='text-green-500 font-medium'>HTML5</span>,  <span className='text-green-500 font-medium'>CSS3</span>. I build best quality, user friendly and responsive custom websites.</p>
 
                             <div className='flex flex-col space-y-3'>
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>Name :</span>
-                                    <span className='ml-2 px-1.5'> Md Mehedi Hasan Hridoy</span>
+                                    <span className='sm:ml-2 px-1.5'> Md Mehedi Hasan Hridoy</span>
                                 </div>
 
 
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>Date of birth :</span>
-                                    <span className='ml-2 px-1.5'> 12 December, 1999</span>
+                                    <span className='sm:ml-2 px-1.5'> 12 December, 1999</span>
                                 </div>
 
 
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>Mobile :</span>
-                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href='tel:+8801518309205' className='ml-2 px-1.5 hover:text-gray-400'> (+880) 151-830-9205</a>
+                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href='tel:+8801518309205' className='sm:ml-2 px-1.5 hover:text-gray-400'> (+880) 151-830-9205</a>
                                 </div>
 
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>Email :</span>
-                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href="mailto:mehedihasan.hr.324@gmail.com" className='ml-2 px-1.5 hover:text-gray-400'> mehedihasan.hr.324@gmail.com </a>
+                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href="mailto:mehedihasan.hr.324@gmail.com" className='sm:ml-2 px-1.5 hover:text-gray-400'> mehedihasan.hr.324@gmail.com </a>
                                 </div>
 
 
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>Linked in :</span>
-                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href="www.linkedin.com/in/mehedihasan-hr" className='ml-2 px-1.5 hover:text-gray-400'> www.linkedin.com/in/mehedihasan-hr </a>
+                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href="www.linkedin.com/in/mehedihasan-hr" className='sm:ml-2 px-1.5 hover:text-gray-400'> www.linkedin.com/in/mehedihasan-hr </a>
                                 </div>
 
                                 {/* github */}
-                                <div className='flex items-center text-gray-500'>
+                                <div className='flex items-center text-gray-500 text-sm sm:text-base'>
                                     <span className='pr-1.5 font-medium'>GitHub :</span>
-                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href='https://github.com/mehedihasanhr' className='ml-2 px-1.5 hover:text-gray-400'>
+                                    <a tabIndex={-1} target="_blank" rel="noopener noreferrer" href='https://github.com/mehedihasanhr' className='sm:ml-2 px-1.5 hover:text-gray-400'>
                                         https://github.com/mehedihasanhr
                                     </a>
                                 </div>
@@ -94,7 +94,7 @@ const About = (props, ref) => {
 
                     <div className='grid grid-cols-3 gap-10 max-w-[1080px] mx-auto'>
                         {/* front-end skill */}
-                        <div className='col-span-1'>
+                        <div className='col-span-3 sm:col-span-1'>
                             <div className='flex flex-col space-y-5 px-5'>
                                 <div className='flex items-center space-x-3'>
                                     <div className='w-10 h-10 flex items-center justify-center rounded-full bg-green-500'>
@@ -121,7 +121,7 @@ const About = (props, ref) => {
                         </div>
 
                         {/* stylesheet skill */}
-                        <div className='col-span-1'>
+                        <div className='col-span-3 sm:col-span-1'>
                             <div className='flex flex-col space-y-5 px-5'>
                                 <div className='flex items-center space-x-3'>
                                     <div className='w-10 h-10 flex items-center justify-center rounded-full bg-yellow-500'>
@@ -148,7 +148,7 @@ const About = (props, ref) => {
                         </div>
 
                         {/* Back-end skill */}
-                        <div className='col-span-1'>
+                        <div className='col-span-3 sm:col-span-1'>
                             <div className='flex flex-col space-y-5 px-5'>
                                 <div className='flex items-center space-x-3'>
                                     <div className='w-10 h-10 flex items-center justify-center rounded-full bg-purple-500'>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Link from "next/link"
 import { Button } from '../Button';
+import Image from 'next/image';
 
 
 export const Navbar = () => {
@@ -44,7 +45,7 @@ export const Navbar = () => {
 
 
                     {/* Nav links... */}
-                    <nav className="flex items-center ml-10 space-x-6">
+                    <nav className="hidden md:flex items-center ml-10 space-x-6">
                         <Link href="/#home" className="text-white/80 hover:text-green-500">
                             Home
                         </Link>
@@ -61,15 +62,19 @@ export const Navbar = () => {
                             Contact us
                         </Link>
 
-                        <Button className="bg-green-500/10 group-hover:bg-green-500/80" bgEffect='bg-green-500'>
-                            {/* <Link href="/" className="text-green-500/80 hover:text-green-500 bg-white/5 px-3 py-1.5 rounded-md hover:bg-green-500/10 ">
-                                Download CV
-                            </Link> */}
+                        <Button className="bg-green-500/10 hover:bg-green-500/80" bgEffect='bg-green-500'>
                             <Link href="/">
                                 Download CV
                             </Link>
                         </Button>
                     </nav>
+                    {/* menu */}
+                    <Button className="block md:hidden bg-green-500/10 hover:bg-green-500/80" bgEffect='bg-green-500'>
+                        <div className='flex items-center space-x-2'>
+                            <Image src="/settings-sliders.svg" alt="" width={14} height={14} />
+                            <span>Menu</span>
+                        </div>
+                    </Button>
                 </div>
             </div>
         </header>

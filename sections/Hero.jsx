@@ -1,5 +1,7 @@
 import * as React from 'react';
 import Image from "next/image"
+import { TicTocTieIcon } from '../components/TicTocTieIcon';
+import { GraphIcon } from '../components/GraphIcon';
 
 const Hero = (_props, ref) => {
     return (
@@ -61,6 +63,17 @@ const Hero = (_props, ref) => {
                             </div>
                         </div>
                     </div>
+
+                    <GraphIcon className='w-72 h-72 absolute top-1/2 right-1/4 translate-x-1/2 -translate-y-1/2' />
+
+
+                    <TicTocTieIcon
+                        className='w-72 h-72 absolute top-1/2 right-1/4 translate-x-1/2 -translate-y-1/2 hidden'
+                        lineColor='#777'
+                        circleColor='#777'
+                        crossColor='#777'
+                        croseLineColor='#777'
+                    />
                 </div>
             </div>
         </section>

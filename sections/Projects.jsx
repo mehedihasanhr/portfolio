@@ -13,12 +13,12 @@ const Projects = () => {
                             <span className='absolute top-0 left-0 w-full h-full bg-green-500 blur-[100px]' />
                             <h3 className="font-bold">My <span className='text-green-500'>Portfolios</span></h3>
                         </div>
-                        <p className='text-gray-500'>
+                        <p className='text-gray-500 text-xs sm:text-base'>
                             --- a few recent design & coding projects ---
                         </p>
                     </div>
                 </div>
-                <div className='grid grid-cols-12 gap-10 mb-20'>
+                <div className='grid grid-cols-4 sm:grid-cols-12 gap-10 mb-20'>
                     {
                         [1, 2, 3, 4, 5, 6].map((_, index) => (
                             <div key={index} className='relative col-span-4 opacity-90'>

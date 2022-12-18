@@ -9,10 +9,10 @@ const About = (props, ref) => {
 
 
     return (
-        <section id="about-section" ref={aboutRef}>
+        <section id="about-section" className='relative' ref={aboutRef}>
             <div className="container text-left">
                 <div className="sm:py-28 md:py-32">
-                    <div className='grid grid-cols-12 gap-10'>
+                    <div className='grid grid-cols-12 gap-8 sm:gap-10'>
                         <div className="md:col-span-12 lg:col-span-5 xl:col-span-4">
                             <div className='relative w-80 h-80 md:w-[379px] md:h-[379px] px-5 flex items-center justify-center' >
                                 <div className='absolute top-0 left-0 w-full h-full '>
@@ -40,7 +40,7 @@ const About = (props, ref) => {
                                 <span className='absolute top-0 left-0 w-full h-full bg-white blur-[100px]' />
                                 <h3 className="font-bold">About <span className='text-green-500'>Me</span></h3>
                             </div>
-                            <p className='text-sm sm:text-base leading-[22px] mb-8 max-w-[600px]'>Hi, {"I'm"} a Professional Web Designer with best experience over 4 years in <span className='text-green-500 font-medium'>React JS</span>, <span className='text-green-500 font-medium'>Next JS</span>,  <span className='text-green-500 font-medium'> Redux </span>,  <span className='text-green-500 font-medium'>HTML5</span>,  <span className='text-green-500 font-medium'>CSS3</span>. I build best quality, user friendly and responsive custom websites.</p>
+                            <p className='text-sm sm:text-base leading-[22px] mb-8 w-full max-w-[600px]'>Hi, {"I'm"} a Professional Web Designer with best experience over 4 years in <span className='text-green-500 font-medium'>React JS</span>, <span className='text-green-500 font-medium'>Next JS</span>,  <span className='text-green-500 font-medium'> Redux </span>,  <span className='text-green-500 font-medium'>HTML5</span>,  <span className='text-green-500 font-medium'>CSS3</span>. I build best quality, user friendly and responsive custom websites.</p>
 
                             <div className='flex flex-col space-y-3'>
                                 <div className='flex items-center text-gray-500 text-sm sm:text-base'>
@@ -86,7 +86,7 @@ const About = (props, ref) => {
                 </div>
 
                 {/* skills */}
-                <div className="sm:py-24 md:py-32 text-center">
+                <div className="py-16 sm:py-24 md:py-32 text-center">
                     <div className='block w-fit mx-auto relative mb-16' >
                         <span className='absolute top-0 left-0 w-full h-full bg-white blur-[100px]' />
                         <h3 className="font-bold">My <span className='text-green-500'>Skills</span></h3>

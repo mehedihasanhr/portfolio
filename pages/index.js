@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
-import { Footer, Navbar } from '../components/Layout';
+import { Footer, MobileMenu, Navbar } from '../components/Layout';
 import { Button } from '../components/Button';
 import Image from 'next/image';
 import Hero from '../sections/Hero';
@@ -19,7 +19,8 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <main className={inter.className} id="home">
+            <main className={`relative ${inter.className}`} id="home">
+                {/* <MobileMenu /> */}
                 <Navbar />
                 <Hero />
                 <About />

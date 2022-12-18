@@ -6,7 +6,7 @@ import { Input, Textarea } from '../components/Form'
 
 const Contact = () => {
     return (
-        <section className='contact-section' id='contact-section'>
+        <section className='relative' id='contact-section'>
             <div className='container py-32'>
                 <div className='flex flex-col items-center justify-center mb-16'>
                     <div className='flex flex-col items-center mb-20'>
@@ -97,9 +97,9 @@ const Contact = () => {
 
                 {/* contact form */}
                 <div>
-                    <div className='grid grid-cols-1 md:grid-cols-12 gap-10'>
+                    <div className='grid grid-cols-12 md:gap-10'>
                         {/* contact form */}
-                        <div className="col-span-1 md:col-span-8 lg:col-span-7 xl:col-span-8 lg:col-start-2 xl:col-start-1 ml-0 lg:ml-6 xl:ml-0">
+                        <div className="col-span-12 col-start-1 md:col-span-8 lg:col-span-7 xl:col-span-8 lg:col-start-2 xl:col-start-1 ml-0 lg:ml-6 xl:ml-0 mb-8">
                             <div className='flex flex-col items-center'>
                                 <div className='w-full max-w-[600px]'>
                                     <div className='block w-fit relative mb-10' >
@@ -119,7 +119,7 @@ const Contact = () => {
                         </div>
 
                         {/* map */}
-                        <div className="col-span-4">
+                        <div className="col-span-12 sm:col-span-4">
                             <div className='flex flex-col mt-3'>
                                 <div className='w-full max-w-[600px]'>
                                     <div className='block w-fit relative mb-10' >

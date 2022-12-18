@@ -29,13 +29,13 @@ export const Navbar = () => {
 
     return (
         <header className="">
-            <div className="container flex items-center h-28">
+            <div className="container flex items-center h-16 sm:h-28">
                 <div className="flex items-center justify-between w-full">
                     {/* Logo... */}
                     <div className="relative">
                         <div className="relative text-green-400 z-10">
                             <Link href="/#home">
-                                <h3>
+                                <h3 className='text-xl sm:text-2xl'>
                                     HRIDOY
                                 </h3>
                             </Link>
@@ -69,7 +69,7 @@ export const Navbar = () => {
                         </Button>
                     </nav>
                     {/* menu */}
-                    <Button className="block md:hidden bg-green-500/10 hover:bg-green-500/80" bgEffect='bg-green-500'>
+                    <Button className="block md:hidden bg-green-500/10 hover:bg-green-500/80 text-sm" bgEffect='bg-green-500'>
                         <div className='flex items-center space-x-2'>
                             <Image src="/settings-sliders.svg" alt="" width={14} height={14} />
                             <span>Menu</span>

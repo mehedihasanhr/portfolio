@@ -21,6 +21,7 @@ export const Footer = () => {
                                 height="16"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
+                                className="text-red-500"
                             >
                                 <path
                                     fillRule="evenodd"

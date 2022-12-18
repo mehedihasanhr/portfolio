@@ -11,7 +11,7 @@ const About = (props, ref) => {
     return (
         <section id="about-section" ref={aboutRef}>
             <div className="container text-left">
-                <div className="py-32">
+                <div className="sm:py-32">
                     <div className='grid grid-cols-12 gap-10'>
                         <div className="md:col-span-12 lg:col-span-5 xl:col-span-4">
                             <div className='relative w-80 h-80 sm:w-[379px] sm:h-[379px] px-5 flex items-center justify-center' >

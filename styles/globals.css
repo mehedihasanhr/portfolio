@@ -6,9 +6,14 @@
 @layer base{
     *{
         scroll-behavior: smooth !important;
+        box-sizing:  border-box; 
+        margin: 0;
+        padding: 0;
     }
     body{
         @apply bg-gray-900 text-white;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     h1,h2,h3,h4,h5,h6{
@@ -27,3 +32,13 @@
     }
 }
 
+
+
+@layer components{
+    table,
+    th,
+    td {
+        @apply border border-gray-700 border-dashed p-3 text-left text-gray-500;
+    }
+
+}

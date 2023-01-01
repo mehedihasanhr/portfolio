@@ -4,10 +4,11 @@ import * as React from 'react';
 import { Button } from '../components/Button';
 import { Project } from '../components/Project';
 import ProjectDetails from '../components/ProjectDetails';
+import { projects } from '../constent/projects';
 
 const Projects = () => {
     const [isProjectDetailsOpen, setIsProjectDetailsOpen] = React.useState(false);
-    const [projectDetails, setProjectDetails] = React.useState(null);
+    const [projectDetails, setProjectDetails] = React.useState({});
     return (
         <section id="portfolios">
             <div className="container sm:py-20 md:py-24 lg:py-32">
@@ -25,7 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-4 sm:grid-cols-8 md:grid-cols-12 gap-10 sm:gap-8 md:gap-6 lg:gap-10 mb-20">
-                    {[1, 2, 3, 4, 5, 6].map((_, index) => (
+                    {/* {[1, 2, 3, 4, 5, 6].map((_, index) => (
                         <Project
                             key={index}
                             imageSrc="/projects/Screenshot from 2022-12-17 23-10-37.png"
@@ -33,6 +34,17 @@ const Projects = () => {
                             showDetailsModal={() => setIsProjectDetailsOpen(true)}
                             setDetails={setProjectDetails}
                             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium at, aliquid, natus cum ducimus asperiores molestiae modi animi ipsum atque ullam expedita, nulla blanditiis doloribus iusto rerum cumque ut deleniti."
+                        />
+                    ))} */}
+
+                    {projects.map((project, index) => (
+                        <Project
+                            key={project._id}
+                            id={project._id}
+                            imageSrc={project.images[0]}
+                            title={project.name}
+                            showDetailsModal={() => setIsProjectDetailsOpen(true)}
+                            setDetails={() => setProjectDetails(project)}
                         />
                     ))}
                 </div>
@@ -45,7 +57,11 @@ const Projects = () => {
                 </div>
             </div>
 
-            <ProjectDetails open={isProjectDetailsOpen} close={() => setIsProjectDetailsOpen(false)} />
+            <ProjectDetails
+                project={projectDetails}
+                open={isProjectDetailsOpen}
+                close={() => setIsProjectDetailsOpen(false)}
+            />
         </section>
     );
 };

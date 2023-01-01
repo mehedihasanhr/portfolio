@@ -2,14 +2,14 @@ import Image from 'next/image';
 import * as React from 'react';
 
 const Sliders = ({ sliders, setSliders, className = 'min-w-full min-h-full' }) => {
-    const [activeSlider, setActiveSlider] = React.useState(1);
+    const [activeSlider, setActiveSlider] = React.useState(0);
 
     return (
         <div className="flex flex-col space-y-3 py-3">
             <div className={`relative min-w-full min-h-full ${className}`}>
                 <Image
-                    src={sliders[activeSlider]?.imageSrc}
-                    alt={sliders[activeSlider]?.alt}
+                    src={sliders[activeSlider]}
+                    alt={'Slider Image'}
                     fill
                     sizes="
                         (max-width: 640px) 340px,

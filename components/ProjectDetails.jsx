@@ -38,13 +38,8 @@ const ProjectDetails = ({ close, open, project }) => {
             {/*  details */}
 
             <div className="py-5">
-                <h1 className="text-2xl font-bold">Allegheny County Department Landing Page</h1>
-                <p className="text-sm text-gray-400 mt-2">
-                    A landing page for Allegheny County Department of Human Services. This page was created to help
-                    individuals find the right department for their needs. The page was created using HTML, CSS, and
-                    JavaScript. The page is fully responsive and works on all devices. The page is also fully accessible
-                    and meets all WCAG 2.1 AA standards. The page is also fully optimized for search engines.
-                </p>
+                <h1 className="text-2xl font-bold">{project && project.name}</h1>
+                <p className="text-sm text-gray-400 mt-2">{project && project.description && project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                     {project.lang &&
                         project.lang.map((lang, index) => (

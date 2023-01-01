@@ -54,7 +54,9 @@ export const Navbar = ({ isMenuOpen, open }) => {
                         </Link>
 
                         <Button className="bg-green-500/10 hover:bg-green-500/80" bgEffect="bg-green-500">
-                            <Link href="/">Download CV</Link>
+                            <a href="my-cv.pdf" download>
+                                Download CV
+                            </a>
                         </Button>
                     </nav>
                     {/* menu */}

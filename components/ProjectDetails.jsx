@@ -3,7 +3,6 @@ import { Button } from './Button';
 import Sliders from './Sliders';
 
 const ProjectDetails = ({ close, open, project }) => {
-    console.log(project);
     if (!open) return null;
     return (
         <div className="rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full h-full max-w-[1080px] max-h-[800px] bg-[rgba(0,0,0,0.8)] backdrop-blur-xl p-10">
